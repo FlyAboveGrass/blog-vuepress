@@ -25,13 +25,10 @@ module.exports = config({
   ],
 
   locales: {
-    "/": {
-      lang: "en-US",
-    },
     "/zh/": {
       title: "草上飞",
       description: "vuepress-theme-hope 的 demo",
-    },
+    }
   },
 
   themeConfig: {
@@ -42,16 +39,16 @@ module.exports = config({
     repo: "https://github.com/vuepress-theme-hope/vuepress-theme-hope",
 
     nav: [
-      { text: "Blog Home", link: "/", icon: "home" },
+      { text: "博客主页", link: "/zh/", icon: "home" },
       {
-        text: "Guide",
+        text: "如何使用",
         icon: "creative",
-        link: "/guide/",
+        link: "/zh/guide/",
       },
       {
-        text: "Docs",
-        link: "https://vuepress-theme-hope.github.io/",
+        text: "主题文档",
         icon: "note",
+        link: "https://vuepress-theme-hope.github.io/zh/",
       },
     ],
 
@@ -74,7 +71,6 @@ module.exports = config({
       "/zh/": {
         nav: [
           { text: "博客主页", link: "/zh/", icon: "home" },
-          { text: "项目主页", link: "/zh/home/", icon: "home" },
           {
             text: "如何使用",
             icon: "creative",
@@ -90,13 +86,18 @@ module.exports = config({
           "/zh/": [
             "",
             "home",
-            "slides",
-            "layout",
+            // "slides",
+            // "layout",
             {
               title: "如何使用",
               icon: "creative",
               prefix: "guide/",
               children: ["", "page", "markdown", "disable", "encrypt"],
+            },
+            {
+              title: "计算机",
+              prefix: "computer/",
+              children: ["正则表达式"],
             },
           ],
         },
@@ -109,7 +110,7 @@ module.exports = config({
       links: {
         Zhihu: "https://zhihu.com",
         Baidu: "https://baidu.com",
-        Github: "https://github.com",
+        Github: "https://github.com/FlyAboveGrass",
       },
     },
 
