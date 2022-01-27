@@ -2,7 +2,7 @@ const { config } = require("vuepress-theme-hope");
 
 module.exports = config({
   title: "草上飞",
-  description: "飞飞飞飞飞～～",
+  description: "古有曳影之剑，腾空而舒，克伐四方",
 
   dest: "./dist",
 
@@ -27,7 +27,7 @@ module.exports = config({
   locales: {
     "/zh/": {
       title: "草上飞",
-      description: "vuepress-theme-hope 的 demo",
+      description: "如有一味绝境，非历十方生死",
     }
   },
 
@@ -36,7 +36,7 @@ module.exports = config({
     hostname: "https://vuepress-theme-hope-demo.mrhope.site",
 
     author: "Mr.FlyAboveGrass",
-    repo: "https://github.com/vuepress-theme-hope/vuepress-theme-hope",
+    repo: "https://github.com/FlyAboveGrass",
 
     nav: [
       { text: "博客主页", link: "/zh/", icon: "home" },
@@ -72,7 +72,7 @@ module.exports = config({
         nav: [
           { text: "博客主页", link: "/zh/", icon: "home" },
           {
-            text: "如何使用",
+            text: "文章列表",
             icon: "creative",
             link: "/zh/guide/",
           },
@@ -116,7 +116,7 @@ module.exports = config({
 
     footer: {
       display: true,
-      content: "默认页脚",
+      content: "天上剑仙三百万，遇我也须尽低眉。",
     },
 
     comment: {
