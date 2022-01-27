@@ -3,6 +3,7 @@ const { config } = require("vuepress-theme-hope");
 module.exports = config({
   title: "草上飞",
   description: "古有曳影之剑，腾空而舒，克伐四方",
+  // base: "/blog-vuepress/",
 
   dest: "./dist",
 
@@ -25,7 +26,7 @@ module.exports = config({
   ],
 
   locales: {
-    "/zh/": {
+    "/": {
       title: "草上飞",
       description: "如有一味绝境，非历十方生死",
     }
@@ -39,11 +40,11 @@ module.exports = config({
     repo: "https://github.com/FlyAboveGrass",
 
     nav: [
-      { text: "博客主页", link: "/zh/", icon: "home" },
+      { text: "博客主页", link: "/", icon: "home" },
       {
-        text: "如何使用",
+        text: "文章列表",
         icon: "creative",
-        link: "/zh/guide/",
+        link: "/doc/guide/",
       },
       {
         text: "主题文档",
@@ -53,55 +54,23 @@ module.exports = config({
     ],
 
     sidebar: {
-      "/": [
+      "/doc/": [
         "",
-        "home",
-        "slides",
-        "layout",
+        // "home",
+        // "slides",
+        // "layout",
         {
-          title: "Guide",
+          title: "如何使用",
           icon: "creative",
           prefix: "guide/",
           children: ["", "page", "markdown", "disable", "encrypt"],
         },
-      ],
-    },
-
-    locales: {
-      "/zh/": {
-        nav: [
-          { text: "博客主页", link: "/zh/", icon: "home" },
-          {
-            text: "文章列表",
-            icon: "creative",
-            link: "/zh/guide/",
-          },
-          {
-            text: "主题文档",
-            icon: "note",
-            link: "https://vuepress-theme-hope.github.io/zh/",
-          },
-        ],
-        sidebar: {
-          "/zh/": [
-            "",
-            "home",
-            // "slides",
-            // "layout",
-            {
-              title: "如何使用",
-              icon: "creative",
-              prefix: "guide/",
-              children: ["", "page", "markdown", "disable", "encrypt"],
-            },
-            {
-              title: "计算机",
-              prefix: "computer/",
-              children: ["正则表达式"],
-            },
-          ],
+        {
+          title: "计算机",
+          prefix: "computer/",
+          children: ["正则表达式"],
         },
-      },
+      ],
     },
 
     blog: {
